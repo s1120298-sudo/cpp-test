@@ -1,12 +1,18 @@
 #include <iostream>
+using namespace std;
 
-int main(){
+int main() {
+    float fahrenheit, celsius;
 
-// #include <iostream>
-// int main() {
-//   int x;            // 宣告（declaration）：跟編譯器說「我需要一個 int 變數叫 x」
-//   x = 5;            // 指派（assignment）：把數值 5 放到 x 裡
-//   std::cout << x;   // 這時輸出會是 5
-//   return 0;
-// }
+    //提示使用者輸入華氏溫度
+    cout << "20 ";
+    cin >> fahrenheit;
+
+    //計算攝氏溫度
+    celsius = (fahrenheit - 32) * 5.0 / 9.0;
+
+     //顯示結果
+    cout << "華氏 " << fahrenheit << " 度等於 " << celsius << " 攝氏度。" << endl;
+
+    return 0;
 }
